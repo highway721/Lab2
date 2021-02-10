@@ -11,9 +11,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <sys/types.h>
-#include <dirent.h>
-#include <sys/stat.h>
+
 
 class Car{
     
@@ -35,6 +33,7 @@ public:
     // You can declare function prototypes
     void SetAll(std::string, double, double, double,int);
     void Move();
+    void RefuelTheCar();
     void InputData();
     void StartEngine();
     void Drive();

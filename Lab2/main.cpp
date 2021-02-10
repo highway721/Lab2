@@ -14,6 +14,7 @@ int main()
     yusuke.Report();
     yusuke.InputData();
     yusuke.StartEngine();
+    yusuke.RefuelTheCar();
     while (yusuke.GetFuel()>0) {
         yusuke.Drive();
         yusuke.Report();

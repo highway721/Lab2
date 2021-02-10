@@ -46,7 +46,7 @@ void Car::Report(){
     std::cout << this -> name << " car has " <<
             this -> fuel <<
             "L remaining fuel and " << this -> distance <<
-    " km passed" << "And you got "<< this -> money<<"$"<<std::endl;
+    " km passed" << " And you got "<< this -> money<<"$"<<std::endl;
     cout << "password is " << password << endl;
 }
 void Car::Move(){
@@ -56,6 +56,21 @@ void Car::Move(){
         money += 100;
     }
 }
+void Car::RefuelTheCar() {
+    string temp;
+    cout << "Do you refuel the car?(y/n)" << endl;
+    cin >> temp;
+    if (temp == "y") {
+        fuel += 50;
+        money -= 100;
+        Report();
+    }
+    else {
+        cout << "Enjoy your drive!" << endl;
+    }
+}
+
+
 void Car::InputData(){
     cout << "Enter your name" << endl;
     cin >> name;
